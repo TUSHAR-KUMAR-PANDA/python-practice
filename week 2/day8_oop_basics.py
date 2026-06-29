@@ -241,9 +241,9 @@ admitted = Hospital.get_all_admitted_patients()
 for p in admitted:
     print(p.patient_name, "-", p.disease)
     
-        self.is_admitted = False
+    if p.is_admitted == False:
         print("Patient discharged")
-        print("Final bill:", self.bill)
+        print("Final bill:", p.bill)
 
 def assign_doctor(self, doctor_name):
     self.doctor_assigned = doctor_name
